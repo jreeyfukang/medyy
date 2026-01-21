@@ -7,257 +7,935 @@
   <meta name="Generator" content="Cocoa HTML Writer">
   <meta name="CocoaVersion" content="2575.6">
   <style type="text/css">
-    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica}
-    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica; min-height: 14.0px}
+    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 14.0px Menlo; color: #4689cc; -webkit-text-stroke: #4689cc}
+    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 14.0px Menlo; color: #c27e65; -webkit-text-stroke: #c27e65}
+    p.p3 {margin: 0.0px 0.0px 0.0px 0.0px; font: 14.0px Menlo; color: #8cd3fe; -webkit-text-stroke: #8cd3fe}
+    p.p4 {margin: 0.0px 0.0px 0.0px 0.0px; font: 14.0px Menlo; color: #cacaca; -webkit-text-stroke: #cacaca}
+    p.p5 {margin: 0.0px 0.0px 0.0px 0.0px; font: 14.0px Menlo; color: #cacaca; -webkit-text-stroke: #cacaca; min-height: 16.0px}
+    p.p6 {margin: 0.0px 0.0px 0.0px 0.0px; font: 14.0px Menlo; color: #6d7378; -webkit-text-stroke: #6d7378}
+    span.s1 {font-kerning: none; background-color: #171818}
+    span.s2 {font-kerning: none; color: #8cd3fe; background-color: #171818; -webkit-text-stroke: 0px #8cd3fe}
+    span.s3 {font-kerning: none; color: #6d6d6d; background-color: #171818; -webkit-text-stroke: 0px #6d6d6d}
+    span.s4 {font-kerning: none; color: #4689cc; background-color: #171818; -webkit-text-stroke: 0px #4689cc}
+    span.s5 {font-kerning: none; color: #cacaca; background-color: #171818; -webkit-text-stroke: 0px #cacaca}
+    span.s6 {font-kerning: none; color: #c27e65; background-color: #171818; -webkit-text-stroke: 0px #c27e65}
+    span.s7 {font-kerning: none}
+    span.s8 {font-kerning: none; color: #d4d4d4; background-color: #171818; -webkit-text-stroke: 0px #d4d4d4}
+    span.s9 {font-kerning: none; color: #a7c598; background-color: #171818; -webkit-text-stroke: 0px #a7c598}
+    span.s10 {font-kerning: none; color: #b76ff7; background-color: #171818; -webkit-text-stroke: 0px #b76ff7}
   </style>
 </head>
 <body>
-<p class="p1">&lt;!DOCTYPE html&gt;</p>
-<p class="p1">&lt;html lang="zh-CN"&gt;</p>
-<p class="p1">&lt;head&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;meta charset="UTF-8"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;title&gt;磨耳朵英语 EarGrinder&lt;/title&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;script src="https://cdn.tailwindcss.com"&gt;&lt;/script&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;script crossorigin src="https://unpkg.com/react@18/umd/react.production.min.js"&gt;&lt;/script&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"&gt;&lt;/script&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;script src="https://unpkg.com/@babel/standalone/babel.min.js"&gt;&lt;/script&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"&gt;</p>
-<p class="p2"><span class="Apple-converted-space">    </span></p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;style&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; background-color: #F2F2F7; }</p>
-<p class="p1"><span class="Apple-converted-space">        </span>.ios-card { background: white; border-radius: 16px; box-shadow: 0 4px 12px rgba(0,0,0,0.05); }</p>
-<p class="p1"><span class="Apple-converted-space">        </span>.btn-ios { transition: all 0.2s; active: scale(0.95); }</p>
-<p class="p1"><span class="Apple-converted-space">        </span>.highlight-green { color: #34C759; font-weight: bold; }</p>
-<p class="p1"><span class="Apple-converted-space">        </span>.highlight-red { color: #FF3B30; text-decoration: underline; }</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;/style&gt;</p>
-<p class="p1">&lt;/head&gt;</p>
-<p class="p1">&lt;body class="bg-gray-100 text-gray-800 h-screen flex flex-col"&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;div id="root" class="h-full flex flex-col max-w-md mx-auto w-full bg-gray-50"&gt;&lt;/div&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;script type="text/babel"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>const { useState, useEffect, useRef } = React;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">        </span>// 默认每日一句库</p>
-<p class="p1"><span class="Apple-converted-space">        </span>const DAILY_SENTENCES = [</p>
-<p class="p1"><span class="Apple-converted-space">            </span>"Success is not final, failure is not fatal.",</p>
-<p class="p1"><span class="Apple-converted-space">            </span>"The best way to predict the future is to create it.",</p>
-<p class="p1"><span class="Apple-converted-space">            </span>"Believe you can and you're halfway there.",</p>
-<p class="p1"><span class="Apple-converted-space">            </span>"Don't watch the clock; do what it does. Keep going.",</p>
-<p class="p1"><span class="Apple-converted-space">            </span>"Your time is limited, so don't waste it living someone else's life."</p>
-<p class="p1"><span class="Apple-converted-space">        </span>];</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">        </span>function App() {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>const [text, setText] = useState(DAILY_SENTENCES[0]);</p>
-<p class="p1"><span class="Apple-converted-space">            </span>const [isLooping, setIsLooping] = useState(false);</p>
-<p class="p1"><span class="Apple-converted-space">            </span>const [loopCount, setLoopCount] = useState(50); // 默认50遍</p>
-<p class="p1"><span class="Apple-converted-space">            </span>const [currentLoop, setCurrentLoop] = useState(0);</p>
-<p class="p1"><span class="Apple-converted-space">            </span>const [isListening, setIsListening] = useState(false);</p>
-<p class="p1"><span class="Apple-converted-space">            </span>const [transcript, setTranscript] = useState("");</p>
-<p class="p1"><span class="Apple-converted-space">            </span>const [voices, setVoices] = useState([]);</p>
-<p class="p1"><span class="Apple-converted-space">            </span>const [selectedVoice, setSelectedVoice] = useState(null);</p>
-<p class="p1"><span class="Apple-converted-space">            </span>const [history, setHistory] = useState([]);</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">            </span>const synth = window.speechSynthesis;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>const recognitionRef = useRef(null);</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">            </span>// 初始化语音和历史</p>
-<p class="p1"><span class="Apple-converted-space">            </span>useEffect(() =&gt; {</p>
-<p class="p1"><span class="Apple-converted-space">                </span>const loadVoices = () =&gt; {</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>const vs = synth.getVoices().filter(v =&gt; v.lang.includes('en'));</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>setVoices(vs);</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>if (vs.length &gt; 0) setSelectedVoice(vs[0].name);</p>
-<p class="p1"><span class="Apple-converted-space">                </span>};</p>
-<p class="p1"><span class="Apple-converted-space">                </span>synth.onvoiceschanged = loadVoices;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>loadVoices();</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">                </span>// 读取本地历史</p>
-<p class="p1"><span class="Apple-converted-space">                </span>const savedHistory = localStorage.getItem('eargrinder_history');</p>
-<p class="p1"><span class="Apple-converted-space">                </span>if (savedHistory) setHistory(JSON.parse(savedHistory));</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">                </span>// 初始化语音识别</p>
-<p class="p1"><span class="Apple-converted-space">                </span>if ('webkitSpeechRecognition' in window || 'SpeechRecognition' in window) {</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>const SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>recognitionRef.current = new SpeechRecognition();</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>recognitionRef.current.continuous = false;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>recognitionRef.current.lang = 'en-US';</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>recognitionRef.current.interimResults = true;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">                    </span>recognitionRef.current.onresult = (event) =&gt; {</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>let finalTranscript = '';</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>for (let i = event.resultIndex; i &lt; event.results.length; ++i) {</p>
-<p class="p1"><span class="Apple-converted-space">                            </span>if (event.results[i].isFinal) {</p>
-<p class="p1"><span class="Apple-converted-space">                                </span>finalTranscript += event.results[i][0].transcript;</p>
-<p class="p1"><span class="Apple-converted-space">                            </span>}</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>}</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>if (finalTranscript) setTranscript(finalTranscript);</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>};</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">                    </span>recognitionRef.current.onend = () =&gt; setIsListening(false);</p>
-<p class="p1"><span class="Apple-converted-space">                </span>}</p>
-<p class="p1"><span class="Apple-converted-space">            </span>}, []);</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">            </span>// 保存历史记录</p>
-<p class="p1"><span class="Apple-converted-space">            </span>const saveToHistory = (newText) =&gt; {</p>
-<p class="p1"><span class="Apple-converted-space">                </span>if (!newText.trim()) return;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>const newHistory = [newText, ...history.filter(h =&gt; h !== newText)].slice(0, 10);</p>
-<p class="p1"><span class="Apple-converted-space">                </span>setHistory(newHistory);</p>
-<p class="p1"><span class="Apple-converted-space">                </span>localStorage.setItem('eargrinder_history', JSON.stringify(newHistory));</p>
-<p class="p1"><span class="Apple-converted-space">            </span>};</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">            </span>// 播放逻辑</p>
-<p class="p1"><span class="Apple-converted-space">            </span>const speak = (txt, count = 1) =&gt; {</p>
-<p class="p1"><span class="Apple-converted-space">                </span>synth.cancel();</p>
-<p class="p1"><span class="Apple-converted-space">                </span>let plays = 0;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>setIsLooping(true);</p>
-<p class="p1"><span class="Apple-converted-space">                </span>setCurrentLoop(0);</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">                </span>const playNext = () =&gt; {</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>if (plays &gt;= count) {</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>setIsLooping(false);</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>return;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>}</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>setCurrentLoop(plays + 1);</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>const utterance = new SpeechSynthesisUtterance(txt);</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>const voice = voices.find(v =&gt; v.name === selectedVoice);</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>if (voice) utterance.voice = voice;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>utterance.rate = 0.9; // 稍微放慢语速方便磨耳朵</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>utterance.onend = () =&gt; {</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>plays++;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>setTimeout(playNext, 800); // 间隔0.8秒</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>};</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>synth.speak(utterance);</p>
-<p class="p1"><span class="Apple-converted-space">                </span>};</p>
-<p class="p1"><span class="Apple-converted-space">                </span>playNext();</p>
-<p class="p1"><span class="Apple-converted-space">            </span>};</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">            </span>const stop = () =&gt; {</p>
-<p class="p1"><span class="Apple-converted-space">                </span>synth.cancel();</p>
-<p class="p1"><span class="Apple-converted-space">                </span>setIsLooping(false);</p>
-<p class="p1"><span class="Apple-converted-space">                </span>setCurrentLoop(0);</p>
-<p class="p1"><span class="Apple-converted-space">            </span>};</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">            </span>// 切换跟读录音</p>
-<p class="p1"><span class="Apple-converted-space">            </span>const toggleListening = () =&gt; {</p>
-<p class="p1"><span class="Apple-converted-space">                </span>if (isListening) {</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>recognitionRef.current.stop();</p>
-<p class="p1"><span class="Apple-converted-space">                </span>} else {</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>setTranscript("");</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>recognitionRef.current.start();</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>setIsListening(true);</p>
-<p class="p1"><span class="Apple-converted-space">                </span>}</p>
-<p class="p1"><span class="Apple-converted-space">            </span>};</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">            </span>// 比较文本生成高亮</p>
-<p class="p1"><span class="Apple-converted-space">            </span>const renderDiff = () =&gt; {</p>
-<p class="p1"><span class="Apple-converted-space">                </span>if (!transcript) return &lt;div className="text-gray-400"&gt;点击麦克风开始跟读...&lt;/div&gt;;</p>
-<p class="p2"><span class="Apple-converted-space">                </span></p>
-<p class="p1"><span class="Apple-converted-space">                </span>const targetWords = text.toLowerCase().replace(/[.,?!]/g, '').split(' ');</p>
-<p class="p1"><span class="Apple-converted-space">                </span>const spokenWords = transcript.toLowerCase().replace(/[.,?!]/g, '').split(' ');</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">                </span>return spokenWords.map((word, i) =&gt; {</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>// 简单匹配算法</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>const isCorrect = targetWords.includes(word);<span class="Apple-converted-space"> </span></p>
-<p class="p1"><span class="Apple-converted-space">                    </span>return &lt;span key={i} className={isCorrect ? "highlight-green mr-1" : "highlight-red mr-1"}&gt;{word}&lt;/span&gt;;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>});</p>
-<p class="p1"><span class="Apple-converted-space">            </span>};</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">            </span>return (</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;div className="flex flex-col h-full p-4 space-y-4"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>{/* 头部 */}</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;div className="flex justify-between items-center mb-2"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;h1 className="text-xl font-bold text-gray-800"&gt;&lt;i className="fa-solid fa-ear-listen text-blue-500 mr-2"&gt;&lt;/i&gt;EarGrinder&lt;/h1&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;button onClick={() =&gt; setText(DAILY_SENTENCES[Math.floor(Math.random() * DAILY_SENTENCES.length)])} className="text-sm text-blue-500"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                            </span>换一句</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;/button&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/div&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">                    </span>{/* 输入/显示区 */}</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;div className="ios-card p-4 flex flex-col space-y-2"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;textarea<span class="Apple-converted-space"> </span></p>
-<p class="p1"><span class="Apple-converted-space">                            </span>value={text}</p>
-<p class="p1"><span class="Apple-converted-space">                            </span>onChange={(e) =&gt; setText(e.target.value)}</p>
-<p class="p1"><span class="Apple-converted-space">                            </span>onBlur={() =&gt; saveToHistory(text)}</p>
-<p class="p1"><span class="Apple-converted-space">                            </span>className="w-full h-24 p-2 text-lg font-medium bg-transparent outline-none resize-none"</p>
-<p class="p1"><span class="Apple-converted-space">                            </span>placeholder="输入你想磨耳朵的英语..."</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>/&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;div className="flex justify-between text-xs text-gray-500"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                            </span>&lt;span&gt;语音库:<span class="Apple-converted-space"> </span></p>
-<p class="p1"><span class="Apple-converted-space">                                </span>&lt;select onChange={e =&gt; setSelectedVoice(e.target.value)} value={selectedVoice} className="ml-1 bg-transparent"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                                    </span>{voices.map(v =&gt; &lt;option key={v.name} value={v.name}&gt;{v.name.slice(0,15)}...&lt;/option&gt;)}</p>
-<p class="p1"><span class="Apple-converted-space">                                </span>&lt;/select&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                            </span>&lt;/span&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/div&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">                    </span>{/* 磨耳朵播放区 */}</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;div className="ios-card p-4"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;div className="flex justify-between items-center mb-4"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                            </span>&lt;span className="font-semibold text-gray-700"&gt;循环磨耳朵&lt;/span&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                            </span>&lt;div className="flex space-x-2 bg-gray-100 p-1 rounded-lg"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                                </span>{[1, 10, 50].map(num =&gt; (</p>
-<p class="p1"><span class="Apple-converted-space">                                    </span>&lt;button<span class="Apple-converted-space"> </span></p>
-<p class="p1"><span class="Apple-converted-space">                                        </span>key={num}</p>
-<p class="p1"><span class="Apple-converted-space">                                        </span>onClick={() =&gt; setLoopCount(num)}</p>
-<p class="p1"><span class="Apple-converted-space">                                        </span>className={`px-3 py-1 text-xs rounded-md ${loopCount === num ? 'bg-white shadow text-blue-600' : 'text-gray-500'}`}</p>
-<p class="p1"><span class="Apple-converted-space">                                    </span>&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                                        </span>{num}x</p>
-<p class="p1"><span class="Apple-converted-space">                                    </span>&lt;/button&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                                </span>))}</p>
-<p class="p1"><span class="Apple-converted-space">                            </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;/div&gt;</p>
-<p class="p2"><span class="Apple-converted-space">                        </span></p>
-<p class="p1"><span class="Apple-converted-space">                        </span>{isLooping ? (</p>
-<p class="p1"><span class="Apple-converted-space">                            </span>&lt;div className="flex flex-col items-center py-4"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                                </span>&lt;div className="text-4xl font-bold text-blue-500 mb-2"&gt;{currentLoop} / {loopCount}&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                                </span>&lt;button onClick={stop} className="px-8 py-2 bg-red-100 text-red-500 rounded-full font-bold"&gt;停止&lt;/button&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                            </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>) : (</p>
-<p class="p1"><span class="Apple-converted-space">                            </span>&lt;button<span class="Apple-converted-space"> </span></p>
-<p class="p1"><span class="Apple-converted-space">                                </span>onClick={() =&gt; speak(text, loopCount)}</p>
-<p class="p1"><span class="Apple-converted-space">                                </span>className="w-full py-3 bg-blue-600 text-white rounded-xl font-bold text-lg active:bg-blue-700 btn-ios shadow-lg shadow-blue-200"</p>
-<p class="p1"><span class="Apple-converted-space">                            </span>&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                                </span>&lt;i className="fa-solid fa-play mr-2"&gt;&lt;/i&gt; 开始磨耳朵</p>
-<p class="p1"><span class="Apple-converted-space">                            </span>&lt;/button&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>)}</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/div&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">                    </span>{/* 跟读纠错区 */}</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;div className="ios-card p-4 flex-1 flex flex-col"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;div className="flex justify-between items-center mb-3"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                            </span>&lt;span className="font-semibold text-gray-700"&gt;影子跟读&lt;/span&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                            </span>&lt;button<span class="Apple-converted-space"> </span></p>
-<p class="p1"><span class="Apple-converted-space">                                </span>onClick={toggleListening}</p>
-<p class="p1"><span class="Apple-converted-space">                                </span>className={`w-12 h-12 rounded-full flex items-center justify-center text-xl transition-all ${isListening ? 'bg-red-500 text-white animate-pulse' : 'bg-gray-100 text-gray-600'}`}</p>
-<p class="p1"><span class="Apple-converted-space">                            </span>&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                                </span>&lt;i className={`fa-solid ${isListening ? 'fa-stop' : 'fa-microphone'}`}&gt;&lt;/i&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                            </span>&lt;/button&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;div className="flex-1 bg-gray-50 rounded-lg p-3 text-lg leading-relaxed overflow-y-auto border border-gray-100"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                            </span>{renderDiff()}</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/div&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">                    </span>{/* 历史记录 */}</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;div className="mt-4"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;h3 className="text-xs font-bold text-gray-400 mb-2 uppercase"&gt;History&lt;/h3&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;div className="flex overflow-x-auto space-x-2 pb-2"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                            </span>{history.map((h, i) =&gt; (</p>
-<p class="p1"><span class="Apple-converted-space">                                </span>&lt;div key={i} onClick={() =&gt; setText(h)} className="flex-shrink-0 bg-white px-3 py-2 rounded-lg text-sm shadow-sm border border-gray-100 whitespace-nowrap max-w-[150px] truncate cursor-pointer"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                                    </span>{h}</p>
-<p class="p1"><span class="Apple-converted-space">                                </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                            </span>))}</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>);</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">        </span>const root = ReactDOM.createRoot(document.getElementById('root'));</p>
-<p class="p1"><span class="Apple-converted-space">        </span>root.render(&lt;App /&gt;);</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;/script&gt;</p>
-<p class="p1">&lt;/body&gt;</p>
-<p class="p1">&lt;/html&gt;</p>
+<p class="p1"><span class="s1">&lt;!DOCTYPE</span><span class="s2"> html</span><span class="s1">&gt;</span></p>
+<p class="p2"><span class="s3">&lt;</span><span class="s4">html</span><span class="s5"> </span><span class="s2">lang</span><span class="s3">=</span><span class="s1">"zh-CN"</span><span class="s3">&gt;</span></p>
+<p class="p1"><span class="s3">&lt;</span><span class="s1">head</span><span class="s3">&gt;</span></p>
+<p class="p3"><span class="s5"><span class="Apple-converted-space">    </span></span><span class="s3">&lt;</span><span class="s4">meta</span><span class="s5"> </span><span class="s1">charset</span><span class="s3">=</span><span class="s6">"UTF-8"</span><span class="s3">&gt;</span></p>
+<p class="p2"><span class="s5"><span class="Apple-converted-space">    </span></span><span class="s3">&lt;</span><span class="s4">meta</span><span class="s5"> </span><span class="s2">name</span><span class="s3">=</span><span class="s1">"viewport"</span><span class="s5"> </span><span class="s2">content</span><span class="s3">=</span><span class="s1">"width=device-width, initial-scale=1.0"</span><span class="s3">&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">    </span></span><span class="s3">&lt;</span><span class="s4">title</span><span class="s3">&gt;</span><span class="s1">磨耳朵英语 | MoErDuo English</span><span class="s3">&lt;/</span><span class="s4">title</span><span class="s3">&gt;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">    </span></span></p>
+<p class="p6"><span class="s5"><span class="Apple-converted-space">    </span></span><span class="s1">&lt;!-- 1. 引入 Tailwind CSS --&gt;</span></p>
+<p class="p2"><span class="s5"><span class="Apple-converted-space">    </span></span><span class="s3">&lt;</span><span class="s4">script</span><span class="s5"> </span><span class="s2">src</span><span class="s3">=</span><span class="s1">"https://cdn.tailwindcss.com"</span><span class="s3">&gt;&lt;/</span><span class="s4">script</span><span class="s3">&gt;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">    </span></span></p>
+<p class="p6"><span class="s5"><span class="Apple-converted-space">    </span></span><span class="s1">&lt;!-- 2. 引入 Babel 用于解析 JSX --&gt;</span></p>
+<p class="p2"><span class="s5"><span class="Apple-converted-space">    </span></span><span class="s3">&lt;</span><span class="s4">script</span><span class="s5"> </span><span class="s2">src</span><span class="s3">=</span><span class="s1">"https://unpkg.com/@babel/standalone/babel.min.js"</span><span class="s3">&gt;&lt;/</span><span class="s4">script</span><span class="s3">&gt;</span></p>
+<p class="p5"><span class="s7"></span><br></p>
+<p class="p6"><span class="s5"><span class="Apple-converted-space">    </span></span><span class="s1">&lt;!-- 3. 定义 Import Map --&gt;</span></p>
+<p class="p2"><span class="s5"><span class="Apple-converted-space">    </span></span><span class="s3">&lt;</span><span class="s4">script</span><span class="s5"> </span><span class="s2">type</span><span class="s3">=</span><span class="s1">"importmap"</span><span class="s3">&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">    </span>{</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">        </span>"imports": {</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span>"react": "https://esm.sh/react@18.2.0",</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span>"react-dom/client": "https://esm.sh/react-dom@18.2.0/client",</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span>"lucide-react": "https://esm.sh/lucide-react@0.292.0"</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">    </span>}</span></p>
+<p class="p1"><span class="s5"><span class="Apple-converted-space">    </span></span><span class="s3">&lt;/</span><span class="s1">script</span><span class="s3">&gt;</span></p>
+<p class="p5"><span class="s7"></span><br></p>
+<p class="p1"><span class="s5"><span class="Apple-converted-space">    </span></span><span class="s3">&lt;</span><span class="s1">style</span><span class="s3">&gt;</span></p>
+<p class="p1"><span class="s5"><span class="Apple-converted-space">        </span></span><span class="s1">.animate-spin-slow</span><span class="s5"> </span><span class="s8">{</span></p>
+<p class="p2"><span class="s5"><span class="Apple-converted-space">            </span></span><span class="s2">animation:</span><span class="s5"> </span><span class="s1">spin</span><span class="s5"> </span><span class="s9">3s</span><span class="s5"> </span><span class="s1">linear</span><span class="s5"> </span><span class="s1">infinite</span><span class="s8">;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">        </span></span><span class="s8">}</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">        </span></span><span class="s10">@keyframes</span><span class="s1"> </span><span class="s6">spin</span><span class="s1"> </span><span class="s8">{</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span></span><span class="s6">from</span><span class="s1"> </span><span class="s8">{</span><span class="s1"> </span><span class="s2">transform:</span><span class="s1"> </span><span class="s6">rotate(</span><span class="s9">0deg</span><span class="s6">)</span><span class="s8">;</span><span class="s1"> </span><span class="s8">}</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span></span><span class="s6">to</span><span class="s1"> </span><span class="s8">{</span><span class="s1"> </span><span class="s2">transform:</span><span class="s1"> </span><span class="s6">rotate(</span><span class="s9">-360deg</span><span class="s6">)</span><span class="s8">;</span><span class="s1"> </span><span class="s8">}</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">        </span></span><span class="s8">}</span></p>
+<p class="p1"><span class="s5"><span class="Apple-converted-space">        </span></span><span class="s1">::selection</span><span class="s5"> </span><span class="s8">{</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span></span><span class="s2">background-color:</span><span class="s1"> #bfdbfe</span><span class="s8">;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">        </span></span><span class="s8">}</span></p>
+<p class="p1"><span class="s5"><span class="Apple-converted-space">        </span></span><span class="s1">.custom-scrollbar::-webkit-scrollbar</span><span class="s5"> </span><span class="s8">{</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span></span><span class="s2">width:</span><span class="s1"> </span><span class="s9">6px</span><span class="s8">;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">        </span></span><span class="s8">}</span></p>
+<p class="p1"><span class="s5"><span class="Apple-converted-space">        </span></span><span class="s1">.custom-scrollbar::-webkit-scrollbar-track</span><span class="s5"> </span><span class="s8">{</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span></span><span class="s2">background:</span><span class="s1"> #f1f5f9</span><span class="s8">;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">        </span></span><span class="s8">}</span></p>
+<p class="p1"><span class="s5"><span class="Apple-converted-space">        </span></span><span class="s1">.custom-scrollbar::-webkit-scrollbar-thumb</span><span class="s5"> </span><span class="s8">{</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span></span><span class="s2">background:</span><span class="s1"> #cbd5e1</span><span class="s8">;</span></p>
+<p class="p3"><span class="s5"><span class="Apple-converted-space">            </span></span><span class="s1">border-radius:</span><span class="s5"> </span><span class="s9">3px</span><span class="s8">;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">        </span></span><span class="s8">}</span></p>
+<p class="p1"><span class="s5"><span class="Apple-converted-space">        </span></span><span class="s1">.custom-scrollbar::-webkit-scrollbar-thumb:hover</span><span class="s5"> </span><span class="s8">{</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span></span><span class="s2">background:</span><span class="s1"> #94a3b8</span><span class="s8">;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">        </span></span><span class="s8">}</span></p>
+<p class="p1"><span class="s5"><span class="Apple-converted-space">    </span></span><span class="s3">&lt;/</span><span class="s1">style</span><span class="s3">&gt;</span></p>
+<p class="p1"><span class="s3">&lt;/</span><span class="s1">head</span><span class="s3">&gt;</span></p>
+<p class="p2"><span class="s3">&lt;</span><span class="s4">body</span><span class="s5"> </span><span class="s2">class</span><span class="s3">=</span><span class="s1">"bg-slate-50 text-slate-800 font-sans"</span><span class="s3">&gt;</span></p>
+<p class="p2"><span class="s5"><span class="Apple-converted-space">    </span></span><span class="s3">&lt;</span><span class="s4">div</span><span class="s5"> </span><span class="s2">id</span><span class="s3">=</span><span class="s1">"root"</span><span class="s3">&gt;&lt;/</span><span class="s4">div</span><span class="s3">&gt;</span></p>
+<p class="p5"><span class="s7"></span><br></p>
+<p class="p6"><span class="s5"><span class="Apple-converted-space">    </span></span><span class="s1">&lt;!-- 应用逻辑 --&gt;</span></p>
+<p class="p2"><span class="s5"><span class="Apple-converted-space">    </span></span><span class="s3">&lt;</span><span class="s4">script</span><span class="s5"> </span><span class="s2">type</span><span class="s3">=</span><span class="s1">"text/babel"</span><span class="s5"> </span><span class="s2">data-type</span><span class="s3">=</span><span class="s1">"module"</span><span class="s3">&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">        </span>import React, { useState, useEffect, useRef, useCallback } from 'react';</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">        </span>import { createRoot } from 'react-dom/client';</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">        </span>import {<span class="Apple-converted-space"> </span></span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">          </span>Play, Pause, RotateCcw, Upload, FileText, Mic,<span class="Apple-converted-space"> </span></span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">          </span>Download, CheckCircle, AlertCircle, Volume2,<span class="Apple-converted-space"> </span></span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">          </span>Languages, X, ChevronDown, User, Sparkles, RefreshCw,</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">          </span>ThumbsUp, History, Clock, Trash2, FileDown, FileAudio, Music, Square, ImagePlus, ScanText, Loader2</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">        </span>} from 'lucide-react';</span></p>
+<p class="p5"><span class="s7"></span><br></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">        </span>// --- 音频处理工具函数 ---</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">        </span></span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">        </span>// 1. Base64 转 Int16Array (PCM数据)</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">        </span>const base64ToInt16Array = (base64) =&gt; {</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span>const binaryString = window.atob(base64);</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span>const len = binaryString.length;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span>const bytes = new Uint8Array(len);</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span>for (let i = 0; i &lt; len; i++) {</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                </span>bytes[i] = binaryString.charCodeAt(i);</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span>}</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span>// 转换为 16-bit PCM</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span>return new Int16Array(bytes.buffer);</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">        </span>};</span></p>
+<p class="p5"><span class="s7"></span><br></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">        </span>// 2. 创建 WAV 文件头并合并数据</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">        </span>const createWavFile = (pcmData, sampleRate = 24000) =&gt; {</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span>const numChannels = 1;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span>const bitsPerSample = 16;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span>const byteRate = sampleRate * numChannels * (bitsPerSample / 8);</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span>const blockAlign = numChannels * (bitsPerSample / 8);</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span>const dataSize = pcmData.byteLength;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span>const buffer = new ArrayBuffer(44 + dataSize);</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span>const view = new DataView(buffer);</span></p>
+<p class="p5"><span class="s7"></span><br></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span>const writeString = (offset, string) =&gt; {</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                </span>for (let i = 0; i &lt; string.length; i++) {</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                    </span>view.setUint8(offset + i, string.charCodeAt(i));</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                </span>}</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span>};</span></p>
+<p class="p5"><span class="s7"></span><br></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span>writeString(0, 'RIFF');</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span>view.setUint32(4, 36 + dataSize, true);</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span>writeString(8, 'WAVE');</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span>writeString(12, 'fmt ');</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span>view.setUint32(16, 16, true);</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span>view.setUint16(20, 1, true); // PCM</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span>view.setUint16(22, numChannels, true);</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span>view.setUint32(24, sampleRate, true);</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span>view.setUint32(28, byteRate, true);</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span>view.setUint16(32, blockAlign, true);</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span>view.setUint16(34, bitsPerSample, true);</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span>writeString(36, 'data');</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span>view.setUint32(40, dataSize, true);</span></p>
+<p class="p5"><span class="s7"></span><br></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span>// 写入 PCM 数据</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span>const pcmBytes = new Uint8Array(pcmData.buffer);</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span>const wavBytes = new Uint8Array(buffer);</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span>wavBytes.set(new Uint8Array(buffer.slice(0, 44)), 0);</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span>wavBytes.set(pcmBytes, 44);</span></p>
+<p class="p5"><span class="s7"></span><br></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span>return new Blob([wavBytes], { type: 'audio/wav' });</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">        </span>};</span></p>
+<p class="p5"><span class="s7"></span><br></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">        </span>// 3. 拼接音频 (循环 N 次)</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">        </span>const loopPcmData = (originalPcm, loopCount, silenceMs = 800, sampleRate = 24000) =&gt; {</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span>const silenceSamplesCount = Math.floor((silenceMs / 1000) * sampleRate);</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span>const singleLoopLength = originalPcm.length + silenceSamplesCount;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span>const totalLength = singleLoopLength * loopCount;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span></span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span>// 安全检查：如果音频过大 (超过 ~200MB)，限制循环次数以防崩溃</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span>if (totalLength * 2 &gt; 200 * 1024 * 1024) {</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                </span>console.warn("Audio too large, truncating loop count.");</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                </span>loopCount = Math.floor((100 * 1024 * 1024) / (singleLoopLength * 2));</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                </span>alert(`文本过长，为防止浏览器崩溃，自动调整为循环 ${loopCount} 遍。`);</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                </span>return loopPcmData(originalPcm, loopCount, silenceMs, sampleRate);</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span>}</span></p>
+<p class="p5"><span class="s7"></span><br></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span>const result = new Int16Array(totalLength);</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span></span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span>for (let i = 0; i &lt; loopCount; i++) {</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                </span>const offset = i * singleLoopLength;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                </span>result.set(originalPcm, offset);</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                </span>// 剩余部分默认为0 (静音)</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span>}</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span>return result;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">        </span>};</span></p>
+<p class="p5"><span class="s7"></span><br></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">        </span>const App = () =&gt; {</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">          </span>// --- 状态管理 ---</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">          </span>const [text, setText] = useState("London is the capital and largest city of England and the United Kingdom. It stands on the River Thames in south-east England at the head of a 50-mile estuary down to the North Sea.");</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">          </span>const [translation, setTranslation] = useState("伦敦是英格兰和联合王国的首都及最大城市。它位于英格兰东南部的泰晤士河畔，处于通往北海的50英里长河口的顶端。（点击此处可编辑翻译）");</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">          </span>const [isProcessingImage, setIsProcessingImage] = useState(false);</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">          </span>const [isTranslating, setIsTranslating] = useState(false);</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">          </span>const [voices, setVoices] = useState([]);</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">          </span>const [selectedVoice, setSelectedVoice] = useState(null);</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">          </span>const [playbackSpeed, setPlaybackSpeed] = useState(1.0);</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">          </span>const [loopCount, setLoopCount] = useState(1);</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">          </span>const [currentLoop, setCurrentLoop] = useState(0);</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">          </span>const [isPlaying, setIsPlaying] = useState(false);</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">          </span>const [highlightIndex, setHighlightIndex] = useState(-1);</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">          </span></span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">          </span>// 历史记录与下载</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">          </span>const [history, setHistory] = useState([]);</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">          </span>const [downloads, setDownloads] = useState([]);</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">          </span>const [generatingId, setGeneratingId] = useState(null);<span class="Apple-converted-space"> </span></span></p>
+<p class="p5"><span class="s7"></span><br></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">          </span>// 跟读相关</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">          </span>const [isRecording, setIsRecording] = useState(false);</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">          </span>const [spokenText, setSpokenText] = useState("");</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">          </span>const [diffResult, setDiffResult] = useState(null);<span class="Apple-converted-space"> </span></span></p>
+<p class="p5"><span class="s7"></span><br></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">          </span>const synthesisRef = useRef(window.speechSynthesis);</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">          </span>const utteranceRef = useRef(null);</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">          </span>const recognitionRef = useRef(null);</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">          </span>const isStoppedRef = useRef(false);</span></p>
+<p class="p5"><span class="s7"></span><br></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">          </span>// --- 初始化 ---</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">          </span>useEffect(() =&gt; {</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span>const loadVoices = () =&gt; {</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">              </span>const allVoices = synthesisRef.current.getVoices();</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">              </span>const britishVoices = allVoices.filter(v =&gt; v.lang === 'en-GB');</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">              </span>const availableVoices = britishVoices.length &gt; 0 ? britishVoices : allVoices.filter(v =&gt; v.lang.startsWith('en'));</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">              </span>setVoices(availableVoices);</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">              </span>if (availableVoices.length &gt; 0) {</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                </span>const preferred = availableVoices.find(v =&gt; v.name.includes('Female') || v.name.includes('Hazel') || v.name.includes('Google UK English Female')) || availableVoices[0];</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                </span>setSelectedVoice(preferred);</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">              </span>}</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span>};</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span>loadVoices();</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span>if (window.speechSynthesis.onvoiceschanged !== undefined) {</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">              </span>window.speechSynthesis.onvoiceschanged = loadVoices;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span>}</span></p>
+<p class="p5"><span class="s7"></span><br></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span>if (!window.Tesseract) {</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                </span>const script = document.createElement('script');</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                </span>script.src = "https://cdn.jsdelivr.net/npm/tesseract.js@5/dist/tesseract.min.js";</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                </span>script.async = true;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                </span>document.body.appendChild(script);</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span>}</span></p>
+<p class="p5"><span class="s7"></span><br></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span>const savedHistory = localStorage.getItem('moerduo_history');</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span>if (savedHistory) {</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                </span>try {</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                    </span>setHistory(JSON.parse(savedHistory));</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                </span>} catch (e) {</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                    </span>console.error("无法解析历史记录", e);</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                </span>}</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span>}</span></p>
+<p class="p5"><span class="s7"></span><br></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span>return () =&gt; {</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">              </span>if (synthesisRef.current) synthesisRef.current.cancel();</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span>};</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">          </span>}, []);</span></p>
+<p class="p5"><span class="s7"></span><br></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">          </span>// --- 历史记录管理 ---</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">          </span>const saveToHistory = (currentText, currentTrans) =&gt; {</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span>if (!currentText || currentText.length &lt; 5) return;</span></p>
+<p class="p5"><span class="s7"></span><br></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span>setHistory(prev =&gt; {</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                </span>if (prev.length &gt; 0 &amp;&amp; prev[0].text === currentText) return prev;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                </span>const newRecord = {</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                    </span>id: Date.now(),</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                    </span>text: currentText,</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                    </span>translation: currentTrans,</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                    </span>date: new Date().toLocaleString()</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                </span>};</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                </span>const newHistory = [newRecord, ...prev].slice(0, 10);</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                </span>localStorage.setItem('moerduo_history', JSON.stringify(newHistory));</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                </span>return newHistory;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span>});</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">          </span>};</span></p>
+<p class="p5"><span class="s7"></span><br></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">          </span>const loadHistoryItem = (item) =&gt; {</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">             </span>if (text &amp;&amp; text !== item.text &amp;&amp; !window.confirm("确定要加载这条记录吗？当前编辑框的内容将被覆盖。")) return;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">             </span>setText(item.text);</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">             </span>setTranslation(item.translation);</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">             </span>window.scrollTo({ top: 0, behavior: 'smooth' });</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">          </span>};</span></p>
+<p class="p5"><span class="s7"></span><br></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">          </span>const deleteHistoryItem = (e, id) =&gt; {</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">              </span>e.stopPropagation();</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">              </span>const newHistory = history.filter(item =&gt; item.id !== id);</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">              </span>setHistory(newHistory);</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">              </span>localStorage.setItem('moerduo_history', JSON.stringify(newHistory));</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">          </span>};</span></p>
+<p class="p5"><span class="s7"></span><br></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">          </span>// --- 下载资源管理 ---</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">          </span>const addToDownloads = (txt, trans, count) =&gt; {</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">              </span>if (count !== 50) return;</span></p>
+<p class="p5"><span class="s7"></span><br></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">              </span>setDownloads(prev =&gt; {</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                  </span>const newDownload = {</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                      </span>id: Date.now(),</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                      </span>title: `磨耳朵资源 (50遍)`,</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                      </span>count: count,</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                      </span>text: txt,</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                      </span>trans: trans,</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                      </span>time: new Date().toLocaleTimeString()</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                  </span>};</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                  </span>return [newDownload, ...prev].slice(0, 5);</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">              </span>});</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">          </span>};</span></p>
+<p class="p5"><span class="s7"></span><br></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">          </span>const handleDownloadScript = (item) =&gt; {</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">              </span>let content = `磨耳朵英语 - 学习讲义\n生成时间: ${new Date().toLocaleString()}\n-------------------------\n\n原文:\n${item.text}\n\n翻译:\n${item.trans}\n\n`;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">              </span>content += `-------------------------\n以下是 ${item.count} 遍循环练习文本 (Study Script):\n\n`;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">              </span>for(let i=1; i&lt;=item.count; i++) {</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                  </span>content += `[第 ${i} 遍]\n${item.text}\n\n`;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">              </span>}</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">              </span></span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">              </span>const blob = new Blob([content], { type: 'text/plain;charset=utf-8' });</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">              </span>const url = URL.createObjectURL(blob);</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">              </span>const a = document.createElement('a');</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">              </span>a.href = url;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">              </span>a.download = `MoErDuo_Script_${item.count}x.txt`;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">              </span>document.body.appendChild(a);</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">              </span>a.click();</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">              </span>document.body.removeChild(a);</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">              </span>URL.revokeObjectURL(url);</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">          </span>};</span></p>
+<p class="p5"><span class="s7"></span><br></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">          </span>// --- 核心：云端生成 + 本地拼接音频 ---</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">          </span>const handleGenerateAudio = async (item) =&gt; {</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">              </span>if (generatingId) return;<span class="Apple-converted-space"> </span></span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">              </span>setGeneratingId(item.id);</span></p>
+<p class="p5"><span class="s7"></span><br></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">              </span>try {</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                  </span>const apiKey = ""; // API Key 自动注入</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                  </span>const url = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-preview-tts:generateContent?key=${apiKey}`;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                  </span></span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                  </span>let geminiVoice = "Kore";<span class="Apple-converted-space"> </span></span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                  </span>if (selectedVoice &amp;&amp; selectedVoice.name.toLowerCase().includes("male") &amp;&amp; !selectedVoice.name.toLowerCase().includes("female")) {</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                      </span>geminiVoice = "Puck";</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                  </span>}</span></p>
+<p class="p5"><span class="s7"></span><br></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                  </span>let response;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                  </span>let attempt = 0;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                  </span>const maxRetries = 3;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                  </span></span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                  </span>while (attempt &lt; maxRetries) {</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                      </span>try {</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                          </span>response = await fetch(url, {</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                              </span>method: 'POST',</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                              </span>headers: { 'Content-Type': 'application/json' },</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                              </span>body: JSON.stringify({</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                                  </span>contents: [{ parts: [{ text: item.text }] }],</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                                  </span>generationConfig: {</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                                      </span>responseModalities: ["AUDIO"],</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                                      </span>speechConfig: {</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                                          </span>voiceConfig: {</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                                              </span>prebuiltVoiceConfig: { voiceName: geminiVoice }</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                                          </span>}</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                                      </span>}</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                                  </span>}</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                              </span>})</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                          </span>});</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                          </span></span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                          </span>if (response.status === 429 || response.status &gt;= 500) {</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                              </span>throw new Error(`Server busy (${response.status})`);</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                          </span>}</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                          </span>break;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                      </span>} catch (err) {</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                          </span>attempt++;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                          </span>console.warn(`第 ${attempt} 次尝试失败:`, err);</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                          </span>if (attempt &gt;= maxRetries) break;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                          </span>await new Promise(resolve =&gt; setTimeout(resolve, Math.pow(2, attempt - 1) * 1000));</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                      </span>}</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                  </span>}</span></p>
+<p class="p5"><span class="s7"></span><br></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                  </span>if (!response || !response.ok) {</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                      </span>let errMsg = "语音生成服务繁忙，请稍后再试";</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                      </span>try {</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                          </span>const errData = await response.json();</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                          </span>if (errData.error &amp;&amp; errData.error.message) {</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                              </span>errMsg = `API错误: ${errData.error.message}`;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                          </span>}</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                      </span>} catch (e) {}</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                      </span>throw new Error(errMsg);</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                  </span>}</span></p>
+<p class="p5"><span class="s7"></span><br></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                  </span>const data = await response.json();</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                  </span>const inlineData = data.candidates?.[0]?.content?.parts?.[0]?.inlineData;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                  </span></span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                  </span>if (!inlineData || !inlineData.data) throw new Error("未获取到音频数据");</span></p>
+<p class="p5"><span class="s7"></span><br></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                  </span>const pcmData = base64ToInt16Array(inlineData.data);</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                  </span>const loopedPcmData = loopPcmData(pcmData, item.count);<span class="Apple-converted-space"> </span></span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                  </span>const wavBlob = createWavFile(loopedPcmData, 24000);</span></p>
+<p class="p5"><span class="s7"></span><br></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                  </span>const downloadUrl = URL.createObjectURL(wavBlob);</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                  </span>const a = document.createElement('a');</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                  </span>a.href = downloadUrl;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                  </span>a.download = `MoErDuo_Audio_Loop${item.count}x_${Date.now()}.wav`;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                  </span>document.body.appendChild(a);</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                  </span>a.click();</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                  </span>document.body.removeChild(a);</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                  </span>URL.revokeObjectURL(downloadUrl);</span></p>
+<p class="p5"><span class="s7"></span><br></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                  </span>alert("音频文件生成成功！已开始下载。");</span></p>
+<p class="p5"><span class="s7"></span><br></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">              </span>} catch (err) {</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                  </span>console.error("音频生成失败", err);</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                  </span>alert(`生成失败: ${err.message || "请检查网络连接"}`);</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">              </span>} finally {</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                  </span>setGeneratingId(null);</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">              </span>}</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">          </span>};</span></p>
+<p class="p5"><span class="s7"></span><br></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">          </span>// --- 自动翻译监听 ---</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">          </span>useEffect(() =&gt; {</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span>const timer = setTimeout(async () =&gt; {</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                </span>if (!text.trim()) {</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                    </span>setTranslation("");</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                    </span>return;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                </span>}</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                </span></span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                </span>setIsTranslating(true);</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                </span>try {</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                    </span>const limit = 1000;<span class="Apple-converted-space"> </span></span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                    </span>const queryText = text.length &gt; limit ? text.substring(0, limit) : text;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                    </span>const res = await fetch(`https://api.mymemory.translated.net/get?q=${encodeURIComponent(queryText)}&amp;langpair=en|zh-CN`);</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                    </span>if (!res.ok) throw new Error('Network response was not ok');</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                    </span>const data = await res.json();</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                    </span></span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                    </span>if (data.responseStatus === 200) {</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                        </span>const resultText = text.length &gt; limit<span class="Apple-converted-space"> </span></span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                            </span>? data.responseData.translatedText + `... (长文本仅翻译前${limit}字)`<span class="Apple-converted-space"> </span></span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                            </span>: data.responseData.translatedText;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                        </span>setTranslation(resultText);</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                    </span>} else {</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                         </span>console.warn("Translation API warning:", data.responseDetails);</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                    </span>}</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                </span>} catch (error) {</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                    </span>console.warn("自动翻译请求受限或网络问题，已忽略:", error);</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                </span>} finally {</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                    </span>setIsTranslating(false);</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                </span>}</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span>}, 1000);</span></p>
+<p class="p5"><span class="s7"></span><br></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span>return () =&gt; clearTimeout(timer);</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">          </span>}, [text]);</span></p>
+<p class="p5"><span class="s7"></span><br></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">          </span>// --- 逻辑功能 ---</span></p>
+<p class="p5"><span class="s7"></span><br></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">          </span>// 1. OCR 图片识别</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">          </span>const handleImageUpload = async (e) =&gt; {</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span>const file = e.target.files[0];</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span>if (!file) return;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span>if (!window.Tesseract) { alert("OCR 组件正在加载中，请稍后再试..."); return; }</span></p>
+<p class="p5"><span class="s7"></span><br></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span>setIsProcessingImage(true);</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span>try {</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">              </span>const { data: { text: recognizedText } } = await window.Tesseract.recognize(file, 'eng');</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">              </span>const cleanText = recognizedText.replace(/\s+/g, ' ').trim();</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">              </span>setText(cleanText);</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">              </span>saveToHistory(cleanText, "（等待翻译...）");<span class="Apple-converted-space"> </span></span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span>} catch (err) {</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">              </span>alert("图片识别失败，请重试或检查图片清晰度。");</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span>} finally {</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">              </span>setIsProcessingImage(false);</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span>}</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">          </span>};</span></p>
+<p class="p5"><span class="s7"></span><br></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">          </span>// 2. 语音合成 (TTS) 控制 (本地播放)</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">          </span>const cancelSpeech = () =&gt; {</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span>if (synthesisRef.current) synthesisRef.current.cancel();</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span>setIsPlaying(false);</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span>setHighlightIndex(-1);</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span>setCurrentLoop(0);</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">          </span>};</span></p>
+<p class="p5"><span class="s7"></span><br></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">          </span>const speak = (targetText, loopTarget = 1) =&gt; {</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span>if (!targetText) return;</span></p>
+<p class="p5"><span class="s7"></span><br></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span>isStoppedRef.current = false;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span>saveToHistory(targetText, translation);</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span>addToDownloads(targetText, translation, 50); // 始终生成 50 遍下载项</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span></span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span>synthesisRef.current.cancel();</span></p>
+<p class="p5"><span class="s7"></span><br></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span>const playNext = (remainingLoops, currentLoopIndex) =&gt; {</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                </span>if (isStoppedRef.current || remainingLoops &lt;= 0) {</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                    </span>setIsPlaying(false);</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                    </span>setHighlightIndex(-1);</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                    </span>setCurrentLoop(0);</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                    </span>return;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                </span>}</span></p>
+<p class="p5"><span class="s7"></span><br></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                </span>const u = new SpeechSynthesisUtterance(targetText);</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                </span>utteranceRef.current = u;<span class="Apple-converted-space"> </span></span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                </span>u.voice = selectedVoice;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                </span>u.rate = playbackSpeed;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                </span></span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                </span>u.onboundary = (event) =&gt; {<span class="Apple-converted-space"> </span></span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                    </span>if (event.name === 'word') setHighlightIndex(event.charIndex);<span class="Apple-converted-space"> </span></span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                </span>};</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                </span></span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                </span>u.onend = () =&gt; {</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                    </span>setCurrentLoop(currentLoopIndex + 1);</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                    </span>setTimeout(() =&gt; {</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                        </span>if (isStoppedRef.current) return;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                        </span>playNext(remainingLoops - 1, currentLoopIndex + 1);</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                    </span>}, 500);</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                </span>};</span></p>
+<p class="p5"><span class="s7"></span><br></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                </span>u.onerror = () =&gt; setIsPlaying(false);</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                </span>synthesisRef.current.speak(u);</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span>};</span></p>
+<p class="p5"><span class="s7"></span><br></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span>setIsPlaying(true);</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span>setCurrentLoop(0);</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span>playNext(loopTarget, 0);</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">          </span>};</span></p>
+<p class="p5"><span class="s7"></span><br></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">          </span>const togglePlay = () =&gt; {</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span>if (isPlaying) {</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">              </span>isStoppedRef.current = true;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">              </span>if (synthesisRef.current) synthesisRef.current.cancel();</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">              </span>setIsPlaying(false);</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">              </span>setHighlightIndex(-1);</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">              </span>setCurrentLoop(0);</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span>} else {</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">              </span>setCurrentLoop(0);</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">              </span>speak(text, loopCount);</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span>}</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">          </span>};</span></p>
+<p class="p5"><span class="s7"></span><br></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">          </span>// 3. 跟读与纠错 (STT)</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">          </span>const startRecording = async () =&gt; {</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span>const SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span>if (!SpeechRecognition) {</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">              </span>alert("您的浏览器不支持语音识别，建议使用 Chrome 或 Edge 桌面版。");</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">              </span>return;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span>}</span></p>
+<p class="p5"><span class="s7"></span><br></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span>try {</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                </span>await navigator.mediaDevices.getUserMedia({ audio: true });</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span>} catch (err) {</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                </span>console.error("无法获取麦克风权限", err);</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span>}</span></p>
+<p class="p5"><span class="s7"></span><br></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span>recognitionRef.current = new SpeechRecognition();</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span>recognitionRef.current.lang = 'en-US';<span class="Apple-converted-space"> </span></span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span>recognitionRef.current.continuous = true;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span>recognitionRef.current.interimResults = true;</span></p>
+<p class="p5"><span class="s7"></span><br></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span>recognitionRef.current.onresult = (event) =&gt; {</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">              </span>let transcript = '';</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">              </span>for (let i = event.resultIndex; i &lt; event.results.length; ++i) {</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                </span>transcript += event.results[i][0].transcript;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">              </span>}</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">              </span>setSpokenText(transcript);</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span>};</span></p>
+<p class="p5"><span class="s7"></span><br></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span>recognitionRef.current.onerror = (event) =&gt; {</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">              </span>console.error("语音识别错误", event);</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">              </span>setIsRecording(false);</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span>};</span></p>
+<p class="p5"><span class="s7"></span><br></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span>try {</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                </span>recognitionRef.current.start();</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                </span>setIsRecording(true);</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                </span>setDiffResult(null);<span class="Apple-converted-space"> </span></span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span>} catch (error) {</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                </span>alert("无法启动语音识别，请刷新页面重试。");</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                </span>setIsRecording(false);</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span>}</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">          </span>};</span></p>
+<p class="p5"><span class="s7"></span><br></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">          </span>const stopRecording = () =&gt; {</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span>if (recognitionRef.current) {</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">              </span>try { recognitionRef.current.stop(); } catch(e) {}</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span>}</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span>setIsRecording(false);</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span>analyzePronunciationAdvanced();</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">          </span>};</span></p>
+<p class="p5"><span class="s7"></span><br></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">          </span>const analyzePronunciationAdvanced = () =&gt; {</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span>const originalTokens = text.trim().split(/\s+/).map(t =&gt; ({</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">              </span>text: t,</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">              </span>clean: t.toLowerCase().replace(/[^\w']/g, ''),<span class="Apple-converted-space"> </span></span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">              </span>status: 'missing'<span class="Apple-converted-space"> </span></span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span>}));</span></p>
+<p class="p5"><span class="s7"></span><br></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span>const spokenTokens = spokenText.trim().split(/\s+/).map(t =&gt;<span class="Apple-converted-space"> </span></span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">              </span>t.toLowerCase().replace(/[^\w']/g, '')</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span>).filter(t =&gt; t.length &gt; 0);</span></p>
+<p class="p5"><span class="s7"></span><br></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span>const n = originalTokens.length;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span>const m = spokenTokens.length;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span>const dp = Array(n + 1).fill(null).map(() =&gt; Array(m + 1).fill(0));</span></p>
+<p class="p5"><span class="s7"></span><br></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span>for (let i = 1; i &lt;= n; i++) {</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">              </span>for (let j = 1; j &lt;= m; j++) {</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                </span>if (originalTokens[i - 1].clean === spokenTokens[j - 1]) {</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                  </span>dp[i][j] = dp[i - 1][j - 1] + 1;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                </span>} else {</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                  </span>dp[i][j] = Math.max(dp[i - 1][j], dp[i][j - 1]);</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                </span>}</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">              </span>}</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span>}</span></p>
+<p class="p5"><span class="s7"></span><br></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span>let i = n, j = m;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span>while (i &gt; 0 &amp;&amp; j &gt; 0) {</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">              </span>if (originalTokens[i - 1].clean === spokenTokens[j - 1]) {</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                </span>originalTokens[i - 1].status = 'correct';</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                </span>i--;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                </span>j--;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">              </span>} else if (dp[i - 1][j] &gt; dp[i][j - 1]) {</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                </span>i--;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">              </span>} else {</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                </span>j--;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">              </span>}</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span>}</span></p>
+<p class="p5"><span class="s7"></span><br></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span>const sentences = [];</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span>let currentSentence = [];</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span></span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span>originalTokens.forEach(token =&gt; {</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">              </span>currentSentence.push(token);</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">              </span>if (/[.!?]["']?$/.test(token.text)) {</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                </span>sentences.push(currentSentence);</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                </span>currentSentence = [];</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">              </span>}</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span>});</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span>if (currentSentence.length &gt; 0) sentences.push(currentSentence);</span></p>
+<p class="p5"><span class="s7"></span><br></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span>const result = sentences.map(s =&gt; ({</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">              </span>words: s,</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">              </span>hasError: s.some(w =&gt; w.status === 'missing')</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span>}));</span></p>
+<p class="p5"><span class="s7"></span><br></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span>setDiffResult(result);</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">          </span>};</span></p>
+<p class="p5"><span class="s7"></span><br></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">          </span>const renderHighlightedText = () =&gt; {</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span>if (highlightIndex === -1) return text;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span>const before = text.substring(0, highlightIndex);</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span>const remainder = text.substring(highlightIndex);</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span>const wordMatch = remainder.match(/^(\S+)/);<span class="Apple-converted-space"> </span></span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span>const word = wordMatch ? wordMatch[0] : "";</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span>const after = remainder.substring(word.length);</span></p>
+<p class="p5"><span class="s7"></span><br></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span>return (</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">              </span>&lt;span&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                </span>{before}</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                </span>&lt;span className="bg-yellow-300 text-black px-1 rounded transition-all duration-75 border-b-2 border-orange-500"&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                    </span>{word}</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                </span>&lt;/span&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                </span>{after}</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">              </span>&lt;/span&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span>);</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">          </span>};</span></p>
+<p class="p5"><span class="s7"></span><br></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">          </span>return (</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span>&lt;div className="min-h-screen pb-12"&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">              </span>{/* 头部 */}</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">              </span>&lt;header className="bg-white shadow-sm sticky top-0 z-20"&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                </span>&lt;div className="max-w-4xl mx-auto px-4 py-3 flex items-center justify-between"&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                  </span>&lt;div className="flex items-center gap-2 text-blue-600"&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;div className="p-2 bg-blue-100 rounded-lg"&gt;&lt;Volume2 size={24} /&gt;&lt;/div&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;h1 className="text-xl font-bold tracking-tight"&gt;磨耳朵英语 &lt;span className="text-xs font-normal text-slate-500 block sm:inline"&gt;| MoErDuo English&lt;/span&gt;&lt;/h1&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                  </span>&lt;/div&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                  </span>&lt;div className="text-xs text-slate-400 hidden sm:block"&gt;正版英式发音 · 智能循环 · 跟读纠错&lt;/div&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">              </span>&lt;/header&gt;</span></p>
+<p class="p5"><span class="s7"></span><br></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">              </span>&lt;main className="max-w-4xl mx-auto px-4 py-6 space-y-6"&gt;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                </span></span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                </span>{/* 1. 输入区域 - 左右分栏 */}</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                </span>&lt;section className="bg-white rounded-2xl shadow-sm border border-slate-100 overflow-hidden relative"&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                  </span>&lt;div className="p-4 bg-slate-50 border-b border-slate-100 flex justify-between items-center"&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;h2 className="font-semibold text-slate-700 flex items-center gap-2"&gt;&lt;FileText size={18} /&gt; 学习内容&lt;/h2&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;div className="flex gap-2"&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                       </span>&lt;button type="button" onClick={() =&gt; { setText(""); setTranslation(""); }} className="px-3 py-1.5 text-xs text-slate-400 hover:text-red-500 transition-colors"&gt;清空&lt;/button&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;/div&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                  </span>&lt;/div&gt;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                  </span></span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                  </span>&lt;div className="grid md:grid-cols-2 divide-y md:divide-y-0 md:divide-x divide-slate-100"&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;div className="p-4 relative bg-white"&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;div className="mb-2 flex justify-between items-center"&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                          </span>&lt;span className="text-xs font-bold text-blue-600 uppercase tracking-wider"&gt;English (英文文本)&lt;/span&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                          </span>&lt;span className="text-xs text-slate-400"&gt;{text.length} 字符&lt;/span&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;/div&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;textarea<span class="Apple-converted-space"> </span></span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                            </span>value={text}<span class="Apple-converted-space"> </span></span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                            </span>onChange={(e) =&gt; setText(e.target.value)}<span class="Apple-converted-space"> </span></span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                            </span>className="w-full h-48 p-2 resize-y focus:outline-none focus:ring-2 focus:ring-blue-100 rounded-md text-lg leading-relaxed text-slate-700 font-medium bg-transparent"<span class="Apple-converted-space"> </span></span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                            </span>placeholder="在这里输入或粘贴英文内容..."<span class="Apple-converted-space"> </span></span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                        </span>/&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;/div&gt;</span></p>
+<p class="p5"><span class="s7"></span><br></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;div className="p-4 bg-slate-50/50 flex flex-col justify-center relative"&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;div className="mb-2 flex justify-between items-center w-full"&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                            </span>&lt;span className="text-xs font-bold text-slate-500 uppercase tracking-wider flex items-center gap-2"&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                                </span>{text ? (</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                                    </span>&lt;&gt;&lt;RefreshCw size={14} className={isTranslating ? "animate-spin" : ""} /&gt; 中文翻译 (自动)&lt;/&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                                </span>) : (</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                                    </span>&lt;&gt;&lt;ScanText size={14} /&gt; 上传图片识别 (OCR)&lt;/&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                                </span>)}</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                            </span>&lt;/span&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                            </span>{text &amp;&amp; (</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                                </span>&lt;button<span class="Apple-converted-space"> </span></span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                                    </span>onClick={() =&gt; setText("")}<span class="Apple-converted-space"> </span></span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                                    </span>className="text-xs text-blue-500 hover:underline flex items-center gap-1"</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                                    </span>title="清空并重新上传"</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                                </span>&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                                    </span>&lt;ImagePlus size={12}/&gt; 重新上传</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                                </span>&lt;/button&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                            </span>)}</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;/div&gt;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                        </span></span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                        </span>{!text ? (</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                            </span>&lt;label className="flex-1 flex flex-col items-center justify-center gap-3 p-6 bg-white border-2 border-dashed border-slate-200 hover:border-blue-400 rounded-xl cursor-pointer transition-all group hover:bg-blue-50/30"&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                                </span>&lt;div className="p-4 bg-slate-100 group-hover:bg-blue-100 rounded-full transition-colors"&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                                    </span>{isProcessingImage ? (</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                                        </span>&lt;RefreshCw size={32} className="text-blue-500 animate-spin" /&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                                    </span>) : (</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                                        </span>&lt;ImagePlus size={32} className="text-slate-400 group-hover:text-blue-500 transition-colors" /&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                                    </span>)}</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                                </span>&lt;/div&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                                </span>&lt;div className="text-center"&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                                    </span>&lt;p className="text-sm font-bold text-slate-600 group-hover:text-blue-600 transition-colors"&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                                        </span>{isProcessingImage ? '正在识别文字...' : '点击上传图片'}</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                                    </span>&lt;/p&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                                    </span>&lt;p className="text-xs text-slate-400 mt-1"&gt;支持自动提取英文文本并填入左侧&lt;/p&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                                </span>&lt;/div&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                                </span>&lt;input type="file" accept="image/*" className="hidden" onChange={handleImageUpload} disabled={isProcessingImage} /&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                            </span>&lt;/label&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                        </span>) : (</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                            </span>&lt;textarea<span class="Apple-converted-space"> </span></span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                                </span>value={translation}<span class="Apple-converted-space"> </span></span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                                </span>onChange={(e) =&gt; setTranslation(e.target.value)}<span class="Apple-converted-space"> </span></span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                                </span>className="w-full h-48 p-2 resize-y bg-transparent focus:outline-none focus:ring-2 focus:ring-slate-200 rounded-md text-base leading-relaxed text-slate-600"<span class="Apple-converted-space"> </span></span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                                </span>placeholder="翻译生成中..."<span class="Apple-converted-space"> </span></span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                            </span>/&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                        </span>)}</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;/div&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                  </span>&lt;/div&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                </span>&lt;/section&gt;</span></p>
+<p class="p5"><span class="s7"></span><br></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                </span>{/* 2. 播放控制与显示区 */}</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                </span>&lt;section className="bg-white rounded-2xl shadow-lg border border-blue-100 overflow-hidden relative"&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                  </span>&lt;div className="absolute top-0 left-0 w-full h-1 bg-slate-100"&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                    </span>{isPlaying &amp;&amp; (&lt;div className="h-full bg-blue-500 animate-pulse" style={{ width: '100%' }}&gt;&lt;/div&gt;)}</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                  </span>&lt;/div&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                  </span>&lt;div className="p-6"&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;div className="flex flex-wrap items-center justify-between gap-4 mb-6"&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                       </span>&lt;div className="flex flex-wrap items-center gap-3"&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                          </span>&lt;div className="relative group"&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                            </span>&lt;div className="flex items-center gap-2 px-3 py-2 bg-slate-100 rounded-lg text-sm font-medium text-slate-700 min-w-[180px] cursor-pointer hover:bg-slate-200 transition-colors"&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                                </span>&lt;User size={16} className="text-blue-500"/&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                                </span>&lt;span className="truncate max-w-[140px]"&gt;{selectedVoice ? selectedVoice.name.replace('Microsoft', '').replace('Google', '').trim() : '加载声音中...'}&lt;/span&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                                </span>&lt;ChevronDown size={14} className="ml-auto opacity-50"/&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                            </span>&lt;/div&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                            </span>&lt;select className="absolute inset-0 opacity-0 cursor-pointer" onChange={(e) =&gt; { const v = voices.find(voice =&gt; voice.name === e.target.value); setSelectedVoice(v); }}&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                                </span>{voices.map(v =&gt; (&lt;option key={v.name} value={v.name}&gt;{v.name} ({v.lang})&lt;/option&gt;))}</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                            </span>&lt;/select&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                          </span>&lt;/div&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                          </span>&lt;div className="flex items-center bg-slate-100 rounded-lg p-1"&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                            </span>{[0.8, 1.0, 1.2, 1.5].map(speed =&gt; (&lt;button key={speed} type="button" onClick={() =&gt; setPlaybackSpeed(speed)} className={`px-2 py-1 text-xs font-bold rounded-md transition-all ${playbackSpeed === speed ? 'bg-white shadow text-blue-600' : 'text-slate-500 hover:text-slate-700'}`}&gt;{speed}x&lt;/button&gt;))}</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                          </span>&lt;/div&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                       </span>&lt;/div&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                       </span>&lt;div className="flex items-center gap-2"&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                           </span>&lt;span className="text-xs text-slate-500 font-medium uppercase"&gt;播放次数&lt;/span&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                           </span>&lt;div className="flex bg-blue-50 rounded-lg p-1"&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                               </span>{[1, 5, 10, 50].map(count =&gt; (&lt;button key={count} type="button" onClick={() =&gt; setLoopCount(count)} className={`px-3 py-1 text-xs font-bold rounded-md transition-all ${loopCount === count ? 'bg-blue-600 text-white shadow-md' : 'text-blue-600/60 hover:bg-blue-100'}`}&gt;{count}&lt;/button&gt;))}</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                           </span>&lt;/div&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                       </span>&lt;/div&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;/div&gt;</span></p>
+<p class="p5"><span class="s7"></span><br></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;div className="bg-slate-50 rounded-xl p-6 md:p-8 min-h-[200px] flex flex-col items-center justify-center text-center border border-slate-200/60 relative"&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                        </span>{isPlaying &amp;&amp; (&lt;div className="mb-4 inline-flex items-center gap-2 px-3 py-1 bg-green-100 text-green-700 rounded-full text-xs font-bold"&gt;&lt;RotateCcw size={12} className={isPlaying ? "animate-spin-slow" : ""} /&gt; 正在播放第 {currentLoop + 1} / {loopCount} 遍&lt;/div&gt;)}</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                        </span></span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;div className="text-2xl md:text-3xl font-serif text-slate-800 leading-relaxed max-w-3xl"&gt;{isPlaying ? renderHighlightedText() : text}&lt;/div&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;div className="mt-6 text-slate-500 text-base max-w-2xl border-t border-slate-200 pt-4"&gt;{isTranslating ? (&lt;span className="flex items-center justify-center gap-2 text-slate-400"&gt;&lt;RefreshCw size={14} className="animate-spin"/&gt; 正在同步翻译...&lt;/span&gt;) : translation}&lt;/div&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;/div&gt;</span></p>
+<p class="p5"><span class="s7"></span><br></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;div className="mt-8 flex justify-center"&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;button type="button" onClick={togglePlay} className={`flex items-center gap-3 px-8 py-4 rounded-full text-lg font-bold shadow-xl transition-all transform hover:scale-105 active:scale-95 ${isPlaying ? 'bg-red-500 hover:bg-red-600 text-white shadow-red-200' : 'bg-blue-600 hover:bg-blue-700 text-white shadow-blue-200'}`}&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                            </span>{isPlaying ? &lt;Pause fill="currentColor" /&gt; : &lt;Play fill="currentColor" /&gt;} {isPlaying ? '停止播放' : '开始磨耳朵'}</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;/button&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;/div&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                  </span>&lt;/div&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                </span>&lt;/section&gt;</span></p>
+<p class="p5"><span class="s7"></span><br></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                </span>{/* 3. 跟读与纠错区 */}</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                </span>&lt;section className="bg-white rounded-2xl shadow-lg border border-slate-100 overflow-hidden"&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;div className="p-4 bg-slate-50 border-b border-slate-100 flex items-center gap-2"&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;Mic size={18} className="text-slate-700"/&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;h2 className="font-semibold text-slate-700"&gt;跟读挑战 (Shadowing)&lt;/h2&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;/div&gt;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                    </span></span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;div className="grid md:grid-cols-2 divide-y md:divide-y-0 md:divide-x divide-slate-100"&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;div className="p-6 flex flex-col"&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                            </span>&lt;h3 className="text-xs font-bold text-slate-400 uppercase tracking-wider mb-4"&gt;跟读内容 (Target)&lt;/h3&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                            </span>&lt;div className="flex-1 text-lg text-slate-700 leading-relaxed mb-6 font-serif"&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                                </span>{text}</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                            </span>&lt;/div&gt;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                            </span></span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                            </span>&lt;div className="mt-auto flex justify-center"&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                                 </span>&lt;button</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                                    </span>type="button"</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                                    </span>onClick={isRecording ? stopRecording : startRecording}</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                                    </span>className={`w-full py-4 rounded-xl font-bold transition-all flex items-center justify-center gap-3 ${</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                                        </span>isRecording<span class="Apple-converted-space"> </span></span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                                        </span>? 'bg-red-50 border-2 border-red-500 text-red-600 animate-pulse'<span class="Apple-converted-space"> </span></span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                                        </span>: 'bg-slate-800 text-white hover:bg-slate-700 shadow-lg'</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                                    </span>}`}</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                                </span>&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                                    </span>{isRecording ? &lt;Square size={20} /&gt; : &lt;Mic size={20} /&gt;}</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                                    </span>{isRecording ? '停止录音 (Stop)' : '开始跟读 (Record)'}</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                                </span>&lt;/button&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                            </span>&lt;/div&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;/div&gt;</span></p>
+<p class="p5"><span class="s7"></span><br></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;div className="p-6 bg-slate-50/50 flex flex-col"&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                             </span>&lt;h3 className="text-xs font-bold text-slate-400 uppercase tracking-wider mb-4"&gt;评测结果 (Result)&lt;/h3&gt;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                             </span></span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                             </span>&lt;div className="flex-1 overflow-y-auto max-h-[400px]"&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                                </span>{!diffResult &amp;&amp; !isRecording ? (</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                                    </span>&lt;div className="h-full flex flex-col items-center justify-center text-slate-400 text-sm"&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                                        </span>&lt;Sparkles size={32} className="mb-2 opacity-30"/&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                                        </span>&lt;p&gt;请点击左侧按钮开始跟读&lt;/p&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                                        </span>&lt;p className="text-xs mt-1"&gt;读完后系统将自动标出错误发音&lt;/p&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                                    </span>&lt;/div&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                                </span>) : isRecording ? (</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                                    </span>&lt;div className="text-slate-500 animate-pulse"&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                                        </span>正在聆听您的发音...</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                                        </span>&lt;div className="mt-4 p-4 bg-white rounded-lg border border-slate-100 shadow-sm text-sm"&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                                            </span>{spokenText || "..."}</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                                        </span>&lt;/div&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                                    </span>&lt;/div&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                                </span>) : (</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                                    </span>&lt;div className="space-y-4"&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                                        </span>&lt;div className="flex items-center gap-2 text-sm p-3 rounded-lg bg-white border border-slate-100 shadow-sm"&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                                            </span>{diffResult.filter(s =&gt; s.hasError).length === 0 ? (</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                                                </span>&lt;span className="text-green-600 font-bold flex items-center gap-2"&gt;&lt;ThumbsUp size={16}/&gt; 发音完美！&lt;/span&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                                            </span>) : (</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                                                </span>&lt;span className="text-orange-500 font-bold flex items-center gap-2"&gt;&lt;AlertCircle size={16}/&gt; 发现 {diffResult.filter(s =&gt; s.hasError).length} 处需改进&lt;/span&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                                            </span>)}</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                                        </span>&lt;/div&gt;</span></p>
+<p class="p5"><span class="s7"></span><br></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                                        </span>&lt;div className="text-lg leading-relaxed"&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                                            </span>{diffResult.map((sentence, sIdx) =&gt; (</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                                                </span>&lt;span key={sIdx} className="inline"&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                                                    </span>{sentence.words.map((wordObj, wIdx) =&gt; {</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                                                        </span>const isError = wordObj.status === 'missing';</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                                                        </span>return (</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                                                            </span>&lt;span<span class="Apple-converted-space"> </span></span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                                                                </span>key={wIdx}<span class="Apple-converted-space"> </span></span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                                                                </span>className={`inline-block mr-1.5 px-1 rounded transition-colors ${</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                                                                    </span>isError<span class="Apple-converted-space"> </span></span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                                                                    </span>? 'bg-red-100 text-red-600 decoration-red-400 underline underline-offset-4 decoration-2'<span class="Apple-converted-space"> </span></span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                                                                    </span>: 'text-green-700'</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                                                                </span>}`}</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                                                            </span>&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                                                                </span>{wordObj.text}</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                                                            </span>&lt;/span&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                                                        </span>);</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                                                    </span>})}</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                                                    </span>&lt;span className="mr-2"&gt;&lt;/span&gt;<span class="Apple-converted-space"> </span></span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                                                </span>&lt;/span&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                                            </span>))}</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                                        </span>&lt;/div&gt;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                                        </span></span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                                        </span>&lt;div className="mt-6 pt-4 border-t border-slate-200"&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                                            </span>&lt;span className="text-xs font-bold text-slate-400 block mb-2"&gt;原始识别内容:&lt;/span&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                                            </span>&lt;p className="text-xs text-slate-500 font-mono bg-white p-2 rounded border border-slate-100"&gt;{spokenText}&lt;/p&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                                        </span>&lt;/div&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                                    </span>&lt;/div&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                                </span>)}</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                             </span>&lt;/div&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;/div&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;/div&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                </span>&lt;/section&gt;</span></p>
+<p class="p5"><span class="s7"></span><br></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                </span>{/* 4. 底部区: 历史记录 &amp; 下载 */}</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                </span>&lt;div className="grid md:grid-cols-2 gap-6"&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;section className="bg-white rounded-2xl shadow-sm border border-slate-100 overflow-hidden"&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;div className="p-4 bg-slate-50 border-b border-slate-100 flex justify-between items-center"&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                            </span>&lt;h2 className="font-semibold text-slate-700 flex items-center gap-2"&gt;&lt;History size={18} /&gt; 最近学习记录&lt;/h2&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                            </span>&lt;span className="text-xs text-slate-400"&gt;保留最近10条&lt;/span&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;/div&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                        </span>{history.length === 0 ? (</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                            </span>&lt;div className="p-8 text-center text-slate-400 text-sm"&gt;&lt;Clock size={32} className="mx-auto mb-2 opacity-30" /&gt;暂无记录，播放或上传后自动保存。&lt;/div&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                        </span>) : (</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                            </span>&lt;div className="divide-y divide-slate-100 max-h-60 overflow-y-auto custom-scrollbar"&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                                </span>{history.map((item) =&gt; (</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                                    </span>&lt;div key={item.id} onClick={() =&gt; loadHistoryItem(item)} className="group flex items-start gap-4 p-4 hover:bg-blue-50 transition-colors cursor-pointer relative"&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                                        </span>&lt;div className="flex-1 min-w-0"&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                                            </span>&lt;div className="flex items-center gap-2 mb-1"&gt;&lt;span className="text-xs font-bold text-slate-400"&gt;{item.date}&lt;/span&gt;&lt;/div&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                                            </span>&lt;p className="text-sm font-medium text-slate-700 truncate"&gt;{item.text}&lt;/p&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                                        </span>&lt;/div&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                                        </span>&lt;button onClick={(e) =&gt; deleteHistoryItem(e, item.id)} className="p-2 text-slate-300 hover:text-red-500 hover:bg-red-50 rounded-full transition-all opacity-0 group-hover:opacity-100" title="删除"&gt;&lt;Trash2 size={16} /&gt;&lt;/button&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                                    </span>&lt;/div&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                                </span>))}</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                            </span>&lt;/div&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                        </span>)}</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;/section&gt;</span></p>
+<p class="p5"><span class="s7"></span><br></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;section className="bg-white rounded-2xl shadow-sm border border-slate-100 overflow-hidden"&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;div className="p-4 bg-slate-50 border-b border-slate-100 flex justify-between items-center"&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                            </span>&lt;h2 className="font-semibold text-slate-700 flex items-center gap-2"&gt;&lt;FileDown size={18} /&gt; 学习资源下载&lt;/h2&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                            </span>&lt;span className="text-xs text-slate-400"&gt;仅显示50遍循环资源&lt;/span&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;/div&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                        </span>{downloads.length === 0 ? (</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                            </span>&lt;div className="p-8 text-center text-slate-400 text-sm"&gt;&lt;FileDown size={32} className="mx-auto mb-2 opacity-30" /&gt;点击“开始磨耳朵”后，此处将自动生成50遍循环的资源供下载。&lt;/div&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                        </span>) : (</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                            </span>&lt;div className="divide-y divide-slate-100 max-h-60 overflow-y-auto custom-scrollbar"&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                                </span>{downloads.map((item) =&gt; (</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                                    </span>&lt;div key={item.id} className="flex flex-col p-4 hover:bg-slate-50 transition-colors gap-3"&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                                        </span>&lt;div&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                                            </span>&lt;div className="flex items-center gap-2"&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                                                </span>&lt;span className="text-xs font-bold px-2 py-0.5 bg-blue-100 text-blue-600 rounded-full"&gt;{item.count}遍循环&lt;/span&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                                                </span>&lt;span className="text-xs text-slate-400"&gt;{item.time}&lt;/span&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                                            </span>&lt;/div&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                                            </span>&lt;p className="text-sm font-medium text-slate-700 mt-1 truncate"&gt;{item.text.substring(0, 40)}...&lt;/p&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                                        </span>&lt;/div&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                                        </span>&lt;div className="flex gap-2"&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                                            </span>&lt;button onClick={() =&gt; handleDownloadScript(item)} className="flex-1 flex items-center justify-center gap-1 px-3 py-1.5 text-xs font-bold bg-white border border-slate-200 text-slate-600 rounded-lg hover:bg-slate-50 hover:text-blue-600 transition-colors"&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                                                </span>&lt;FileText size={14} /&gt; 文本讲义</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                                            </span>&lt;/button&gt;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                                            </span></span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                                            </span>&lt;button<span class="Apple-converted-space"> </span></span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                                                </span>onClick={() =&gt; handleGenerateAudio(item)}<span class="Apple-converted-space"> </span></span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                                                </span>disabled={generatingId === item.id}</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                                                </span>className={`flex-1 flex items-center justify-center gap-1 px-3 py-1.5 text-xs font-bold rounded-lg text-white transition-colors shadow-sm ${</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                                                    </span>generatingId === item.id</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                                                        </span>? 'bg-slate-400 cursor-not-allowed'<span class="Apple-converted-space"> </span></span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                                                        </span>: 'bg-green-600 hover:bg-green-700'</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                                                </span>}`}</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                                            </span>&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                                                </span>{generatingId === item.id ? (</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                                                    </span>&lt;&gt;&lt;Loader2 size={12} className="animate-spin" /&gt; 生成中...&lt;/&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                                                </span>) : (</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                                                    </span>&lt;&gt;&lt;FileAudio size={14} /&gt; 生成50遍音频 (WAV)&lt;/&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                                                </span>)}</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                                            </span>&lt;/button&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                                        </span>&lt;/div&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                                    </span>&lt;/div&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                                </span>))}</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                            </span>&lt;/div&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                        </span>)}</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;/section&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</span></p>
+<p class="p5"><span class="s7"></span><br></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">              </span>&lt;/main&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">          </span>);</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">        </span>};</span></p>
+<p class="p5"><span class="s7"></span><br></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">        </span>const root = createRoot(document.getElementById('root'));</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">        </span>root.render(&lt;App /&gt;);</span></p>
+<p class="p1"><span class="s5"><span class="Apple-converted-space">    </span></span><span class="s3">&lt;/</span><span class="s1">script</span><span class="s3">&gt;</span></p>
+<p class="p1"><span class="s3">&lt;/</span><span class="s1">body</span><span class="s3">&gt;</span></p>
+<p class="p1"><span class="s3">&lt;/</span><span class="s1">html</span><span class="s3">&gt;</span></p>
 </body>
 </html>
